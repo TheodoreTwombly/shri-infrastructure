@@ -1,5 +1,5 @@
 name: PR
-on: [push, pull_request, workflow_call]
+on: [pull_request, workflow_call]
 jobs:
   setup:
     runs-on: ubuntu-latest
@@ -69,8 +69,8 @@ jobs:
         if: always()
       - uses: actions/upload-artifact@v3
         with:
-          name: junit
-          path: junit.xml
+          name: teamcity
+          path: teamcity.xml
           retention-days: 30
 
   e2e-tests:
