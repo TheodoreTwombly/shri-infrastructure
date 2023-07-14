@@ -30,3 +30,6 @@ npm run e2e
 ```sh
 npm test
 ```
+
+Add some text with PR
+Update by next commit in PR
