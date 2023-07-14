@@ -33,7 +33,7 @@
         "e2e": "playwright test --project=chromium && playwright show-report",
         "test-ci": "CI=true npm test -- --reporters=\"default\" --reporters=\"jest-html-reporter\" --reporters=\"jest-teamcity\"",
         "lint-check": "eslint '**/*.{js,jsx,ts,tsx}'",
-        "e2e-ci": "playwright test --project=chromium"
+        "e2e-ci": "CI=true playwright test --project=chromium"
     },
     "eslintConfig": {
         "extends": [

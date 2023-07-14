@@ -69,13 +69,16 @@ jobs:
         if: always()
       - uses: actions/upload-artifact@v3
         with:
-          name: unit
-          path: unit.xml
+          name: junit
+          path: junit.xml
           retention-days: 30
 
   e2e-tests:
     needs: setup
     runs-on: ubuntu-latest
+
+    env:
+      CI: true
 
     steps:
       - uses: actions/checkout@v3
