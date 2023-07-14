@@ -34,7 +34,7 @@ jobs:
           fetch-depth: 0
 
       - name: Install correct Node.js version
-      - uses: actions/setup-node@v3
+        uses: actions/setup-node@v3
         with:
           node-version: "18"
 
