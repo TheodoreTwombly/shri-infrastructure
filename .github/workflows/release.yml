@@ -35,7 +35,7 @@ jobs:
         id: build_changelog
         uses: ardalanamini/auto-changelog@v4
         with:
-          github-token: ${{ github.token }}
+          github-token: ${{ secrets.GITHUB_TOKEN }}
           commit-types: |
             fix: Bug Fixes
             build: Build System & Dependencies
