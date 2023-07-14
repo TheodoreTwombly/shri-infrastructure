@@ -5,9 +5,9 @@ on:
     tags:
       - 'v\d+'
 
-permissions:
-  contents: read
-  issues: write
+# permissions:
+#   contents: read
+#   issues: write
 
 jobs:
   tests:
